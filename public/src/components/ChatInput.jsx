@@ -58,6 +58,11 @@ const Container = styled.div`
     padding: 0 1rem;
     gap: 1rem;
   }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
   .button-container {
     display: flex;
     align-items: center;
@@ -65,6 +70,10 @@ const Container = styled.div`
     gap: 1rem;
     .emoji {
       position: relative;
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+        left: 0;
+        margin-right: 10px;
+      }
       svg {
         font-size: 1.5rem;
         color: #ffff00c8;
@@ -105,6 +114,10 @@ const Container = styled.div`
     align-items: center;
     gap: 2rem;
     background-color: #ffffff34;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+      max-width: 8.5rem;
+    }
+
     input {
       width: 90%;
       height: 60%;
@@ -134,6 +147,9 @@ const Container = styled.div`
         svg {
           font-size: 1rem;
         }
+      }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+        padding: 0;
       }
       svg {
         font-size: 2rem;

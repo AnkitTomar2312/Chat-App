@@ -27,8 +27,14 @@ const Container = styled.div`
   align-items: center;
   color: white;
   flex-direction: column;
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    text-align: center;
+  }
   img {
     height: 20rem;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+      height: 7rem;
+    }
   }
   span {
     color: #4e0eff;

@@ -74,6 +74,12 @@ const Container = styled.div`
     align-items: center;
     gap: 1rem;
     justify-content: center;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+      max-width: auto;
+      h3{
+        display: none;
+      }
+    }
     img {
       height: 2rem;
     }
@@ -88,6 +94,9 @@ const Container = styled.div`
     align-items: center;
     overflow: auto;
     gap: 0.8rem;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+      max-width: 5rem;
+    }
     &::-webkit-scrollbar {
       width: 0.2rem;
       &-thumb {
@@ -107,6 +116,10 @@ const Container = styled.div`
       gap: 1rem;
       align-items: center;
       transition: 0.5s ease-in-out;
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+        display: block;
+        text-align: center;
+      }
       .avatar {
         img {
           height: 3rem;
@@ -147,6 +160,17 @@ const Container = styled.div`
           font-size: 1rem;
         }
       }
+    }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+      display: block;
+      max-width: 5rem;
+      padding-left: 0.7rem;
+      .avatar {
+      img {
+        height: 3rem;
+        max-inline-size: 100%;
+      }
+
     }
   }
 `;

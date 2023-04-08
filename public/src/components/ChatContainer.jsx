@@ -120,6 +120,10 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+      padding: 0;
+      height: 4rem;
+    }
     .user-details {
       display: flex;
       align-items: center;
@@ -162,6 +166,10 @@ const Container = styled.div`
         color: #d1d1d1;
         @media screen and (min-width: 720px) and (max-width: 1080px) {
           max-width: 70%;
+        }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+          max-width: 60%;
+          font-size: 0.8rem;
         }
       }
     }
